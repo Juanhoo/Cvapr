@@ -35,7 +35,7 @@ class _keyword_spotting_Service:
 
         return predicted_keyword
 
-    def preprocess(self, file_path, n_mfcc = 13, n_fft = 2048, hop_length = 512):
+    def preprocess(self, file_path, n_mfcc=13, n_fft=2048, hop_length=512):
         # load audio file
         signal, sr = librosa.load(file_path)
         #consistency in audio file length
